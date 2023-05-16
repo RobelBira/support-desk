@@ -18,7 +18,6 @@ function TicketItem({ticket}) {
         View
     </Link>
     </div>
-  
   )
 }
 export default TicketItem

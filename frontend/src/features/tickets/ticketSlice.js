@@ -32,6 +32,7 @@ export const getTickets=createAsyncThunk('tickets/getAll', async (_,thunkAPI)=>{
 
         return thunkAPI.rejectWithValue(message)
     } 
+    
 })
 
 

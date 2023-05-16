@@ -1,4 +1,5 @@
-import { CreateSlice, createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+
+import {  createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import authService from "./authService";
 
 
@@ -93,6 +94,7 @@ export const authSlice=createSlice({
      })
     }
 })
+
 
 export const {reset}= authSlice.actions
 export default authSlice.reducer

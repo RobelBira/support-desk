@@ -47,6 +47,7 @@ if(ticket.user.toString() !== req.user.id){
     throw new Error('User not authorized')
 }
 
+
 const note=await Note.create({
     text: req.body.text,
     isStaff: false,

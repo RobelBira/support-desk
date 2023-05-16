@@ -3,8 +3,10 @@ import { getTicket,closeTicket } from "../features/tickets/ticketSlice"
 import BackButton from "../components/BackButton"
 import Spinner from "../components/Spinner"
 import { useEffect,useState } from "react"
+
 import { useParams ,useNavigate} from "react-router-dom"
 import {toast} from 'react-toastify'
+// eslint-disable-next-line
 import { getNotes,createNote ,reset as notesReset} from "../features/notes/noteSlice"
 import NoteItem from '../components/NoteItem'
 import Modal from 'react-modal'
@@ -36,10 +38,10 @@ function Ticket() {
   const [noteText,setNoteText]=useState('')
 
 
-const {ticket,isLoading,isSuccess,isError,message}=useSelector((state)=>state.tickets)
+const {ticket,isLoading,isError,message}=useSelector((state)=>state.tickets)
 
 const {notes,isLoading: notesIsLoading,}=useSelector((state)=>state.notes)
-
+// eslint-disable-next-line
 const params=useParams()
 const navigate=useNavigate()
 const dispatch=useDispatch()
@@ -83,7 +85,6 @@ if (isLoading || notesIsLoading){
 if(isError){
   return <h3>something went wrong</h3>
 }
-
   return (
  <div className="ticket-page">
   <header className="ticket-header">

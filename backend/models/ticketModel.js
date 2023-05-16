@@ -24,6 +24,7 @@ const ticketSchema= mongoose.Schema({
     }
 
 },
+
 {
     timestamps: true
 }

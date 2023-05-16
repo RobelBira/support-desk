@@ -12,6 +12,7 @@ const noteSchema= mongoose.Schema({
         required: true,
         ref: 'Ticket'
     },
+    
     text:{
         type: String,
         required: [true, 'Please add some text']

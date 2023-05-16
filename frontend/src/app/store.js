@@ -9,4 +9,5 @@ export const store = configureStore({
      tickets: ticketReducer,
      notes: noteReducer,
   },
-});
+})
+

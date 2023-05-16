@@ -9,5 +9,6 @@ const BackButton =({url}) => {
             <FaArrowCircleLeft/> Back
         </Link>
       )
+      
 }
 export default BackButton

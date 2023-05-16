@@ -16,6 +16,7 @@ const {user}=useSelector((state)=>state.auth)
 {new Date(note.createdAt).toLocaleString('en-US')}
 </div>
     </div>
+    
   )
 }
 export default NoteItem

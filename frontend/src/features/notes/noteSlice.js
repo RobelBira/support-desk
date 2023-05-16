@@ -67,6 +67,7 @@ export const noteSlice =createSlice({
             state.isLoading=false
             state.isError=true
             state.message= action.payload
+            
         })
 
     }

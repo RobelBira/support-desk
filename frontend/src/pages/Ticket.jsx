@@ -40,6 +40,7 @@ function Ticket() {
 
 const {ticket,isLoading,isError,message}=useSelector((state)=>state.tickets)
 
+
 const {notes,isLoading: notesIsLoading,}=useSelector((state)=>state.notes)
 // eslint-disable-next-line
 const params=useParams()

@@ -37,8 +37,8 @@ function Ticket() {
   const [modalIsOpen,setModalIsOpen]=useState(false)
   const [noteText,setNoteText]=useState('')
 
-
 const {ticket,isLoading,isError,message}=useSelector((state)=>state.tickets)
+
 
 
 const {notes,isLoading: notesIsLoading,}=useSelector((state)=>state.notes)
